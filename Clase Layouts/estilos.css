@@ -1,0 +1,39 @@
+.container {
+    margin-top:10px;
+    text-align: justify;
+    width: 900px;
+    margin-left:auto;
+    margin-right:auto;
+    height:620px;
+}
+
+.header {
+    margin:10px;
+    /*height: 100px;*/
+    background-color: rgb(200, 216, 211);
+    width:880px;
+    float:left;
+    padding-left: 10px;
+}
+
+.main {
+    margin:10px;
+    height: 400px;
+    width: 650px;;
+    float:left;
+}
+
+.side {
+    margin-top:10px;
+    margin-right:10px;
+    height: 400px;
+    width:216px; 
+    float:left;
+}
+
+.footer {
+    margin:10px;
+    height:50px;
+    float:left;
+    width:880px;
+}

@@ -1,5 +1,54 @@
-p {
+body {
+    color: rgb(253, 244, 75);
+    background-color:rgb(0,0,0,0.5);
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #7ac9b0;
+}
+
+a:hover {
+    color:white;
+}
+
+a:active {
+    color:orange;
+}
+
+a:visited {
+    color:red;
+}
+
+#subtituloPrincipal {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.parrafo {
+    font-size: 11px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20;
-    color: #ff0088;
+}
+
+p::first-line {
+    color:blue;
+    text-transform: uppercase;
+}
+
+.blockquote {
+    font-style: italic;
+}
+
+.popup {
+    width: 500px;
+    height:500px;
+    position: absolute;
+    border:1px solid;
+    right:5px;
+    top:10px;
+    z-index:3;
+    background-color:rgb(0,0,0,0.5);
+    visibility:hidden;
+    
+
 }
