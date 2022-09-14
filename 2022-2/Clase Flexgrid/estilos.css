@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    display:flex;
+    box-sizing:content-box;
+    flex-direction: row;
+}
+header {
+    display:flex;
+    padding:20px;
+    background-color: lightblue;
+}
+
+.title {
+    flex:3;
+}
+
+.headermenu{
+ padding:3em;
+ flex:1;   
+}
+
+.headermenu ul {
+    list-style: none;
+}
+
+.headermenu ul li {
+    display:inline;
+}
+
+a {
+    color:white;
+    font-style: oblique;
+}
+
+aside {
+    flex:1;
+}
+
+article {
+    flex:3;
+
+}
+
+footer {
+    display:flex;
+}
+
+@media (max-width: 500px) {
+    section {
+        flex-direction: column;
+    }
+}
