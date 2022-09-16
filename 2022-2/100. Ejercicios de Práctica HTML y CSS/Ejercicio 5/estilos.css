@@ -1,0 +1,23 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    color:cadetblue;
+}
+
+h2 {
+    color:blueviolet;
+}
+
+h7 {
+    font-size: 11;
+}
+
+.lista-paises li li {
+    list-style-type: circle;
+}
+
+.referencias {
+    font-size: 12px;
+}

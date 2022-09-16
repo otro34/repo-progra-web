@@ -1,0 +1,114 @@
+
+
+.navbar {
+    height: 70px;
+    display: flex;
+    padding: 20px 36px;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    background-color: #F55A5A;
+  }
+  
+  .navbar > p {
+  
+    width: 109px;
+    height: 16px;
+    left: 84px;
+    top: 16px;
+    align-content: center;
+    margin-top: 25px;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17.4608px;
+    line-height: 18px;
+    letter-spacing: -0.075em;
+  
+    color: #FFFFFF;
+  }
+  
+  .card {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  
+  .card--img {
+    width: 125px;
+    height: 168px;
+    left: 455px;
+    top: 100px;
+    border-radius: 9px;
+    margin-top: 30px
+    
+    
+  }
+  
+  .card--stats {
+    
+    padding-left: 15px;
+    padding: 25px;
+    font-size: 20px;
+    
+    
+  }
+  
+  .card--location {
+    color: dimgrey;
+    font-size: 15.24px;
+    display: flex;
+    align-items: center;
+    padding-left: 4px
+    
+    
+  }
+  
+  .card--location > a {
+    
+    padding: 10px;
+    
+  }
+  
+  .card--title {
+    
+    margin-top: -11.9px;
+    
+    padding: 5px;
+    
+  }
+  
+  .card--date {
+    
+    font-size: 13.24px;
+    display: flex;
+    flex-direction: row;
+    margin-top: -10.9px
+  
+  }
+  
+  .card--date > h4 {
+    
+    margin: 5px;
+    
+    
+  }
+  
+  .card--info {
+    
+    font-size: 15.24px;
+    padding-left: 5px;
+    
+  }
+  
+  a {
+    color: darkgrey;
+    font-size: 12.24px;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .card--location--icon {
+    width: 20px;
+  }
