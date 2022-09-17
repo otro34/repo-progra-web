@@ -1,0 +1,36 @@
+<html>
+    <head>
+
+    </head>
+    <!--
+        Comentarios en HTML
+    -->
+    <body>
+        <form action="destino.html" method="post">
+            <label for="nombres">Nombres: </label>
+            <input type="text" name="nombres" required/>
+            <br>
+            <label for="apellidos">Apellidos: </label>
+            <input type="password" name="apellidos" required />
+            <br>
+            <label for="universidad">Universidad:</label>
+            <select name="universidad">
+                <option>Universidad de Lima</option>
+                <option>PUCP</option>
+            </select>
+            <br/>
+            <label for="motivacion"></label>
+            <textarea  name="motivacion">
+
+            </textarea>
+            <br/>
+            <label for="rdpregrado">Pregrado</label>
+            <input type="radio" value="pregrado" name="grado" id="rdpregrado">
+            <label for="rdposgrado">Posgrado</label>
+            <input type="radio" value="posgrado" name="grado" id="rdposgrado">
+                
+            <br/>
+            <input type="submit" value="Enviar"/>
+        </form>
+    </body>
+</html>
