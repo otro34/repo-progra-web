@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0px;
+}
+
+header {
+    display:flex;
+    background-color: 12AAFF;
+    box-shadow: 10px 10px 5px lightgray;
+    height:5vh;
+}
+
+section {
+    display:flex;
+    height:90vh;
+}
+
+aside {
+    flex:1;
+    margin:auto;
+    background-color: 12AAFF;
+    height:100%;
+    width:10%;
+}
+
+section .main {
+    flex:12;
+}
+
+footer {
+    background-color: grey;
+    color:white;
+    padding:10px;
+    display:flex;
+}
+
+.footerSection {
+    width:50%;
+}
+
+.al {
+    text-align: right;
+}
+
+.seccionMedia {
+    display: flex;
+    height: 60%;
+}
+.seccionInferior {
+    background-color: red;
+}
+
+.producto {
+    flex: 1;
+    background-color: grey;
+}
+
+.TituloProductos {
+    display: flex;
+}
