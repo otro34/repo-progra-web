@@ -35,6 +35,15 @@ function calcular () {
         case 'suma':
             calculo = parseInt(numero1) + parseInt(numero2);
             break;
+        case 'resta':
+            calculo = parseInt(numero1) - parseInt(numero2);
+            break;
+        case 'multiplicacion':
+            calculo = parseInt(numero1) * parseInt(numero2);
+            break;
+        case 'division':
+                calculo = parseInt(numero1) / parseInt(numero2);
+                break;
         default:
             break;
     }
@@ -44,4 +53,7 @@ function calcular () {
 
 const limpiar = () => {
     document.getElementById('txtOperacion').value = "";
+    operador = "nada";
+    numero1 = 0;
+    numero2 = 0;
 }
