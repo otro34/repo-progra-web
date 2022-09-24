@@ -40,15 +40,11 @@ section {
 }
 
 aside {
-    flex:1.5;
+    flex:2;
     margin:auto;
     background-color: 12AAFF;
     height:100%;
     width:10%;
-}
-
-.main {
-    flex:12;
 }
 
 footer {
@@ -58,7 +54,17 @@ footer {
     display:flex;
 }
 
-.footerSection {
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.main {
+    flex:12;
+}
+
+.inlineSection {
     width:50%;
 }
 
@@ -66,20 +72,28 @@ footer {
     text-align: right;
 }
 
+.top {
+    margin:20px;
+    text-decoration: underline;
+}
+
 .seccionMedia {
     display: flex;
-    height: 60%;
+    height: 55%;
 }
 
 .seccionInferior {
+    margin-top:10px;
+    background-color: white;
+    margin-left:30px;
 }
 
 .producto {
-    text-align: middle;
     flex: 1;
     padding-left: 30px;
     background-color: white;
     margin-left: 30px;
+    height: 400px;
 }
 
 .TituloProductos {
