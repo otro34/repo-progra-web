@@ -1,5 +1,56 @@
 <html>
+    <head>
+        <link href="estilos.css" rel="stylesheet"/>
+        <script src="script.js"></script>
+        <script>
+            function mostrarMensaje2(){
+                alert("MENSAJE");
+            }
+        </script>
+    </head>
     <body>
-        Nuevo Script!
+        <input type="text" id="txtOperacion" value=""  />
+        <br/>
+        <br/>
+        <input type="button" value="1" class="numberButton" id="btn1"
+        onclick="asignarValor(document.getElementById('btn1').value)" />
+        <input type="button" value="2" class="numberButton" id="btn2"
+        onclick="asignarValor(document.getElementById('btn2').value)" />
+        <input type="button" value="3" class="numberButton" id="btn3"
+        onclick="asignarValor(document.getElementById('btn3').value)" />
+        <input type="button" value="+" class="numberButton" id="btnSumar"
+        onclick="marcarOperacion('suma')" />
+        <br/>
+        <input type="button" value="4" class="numberButton" id="btn4"
+        onclick="asignarValor(document.getElementById('btn4').value)" />
+        <input type="button" value="5" class="numberButton" id="btn5"
+        onclick="asignarValor(document.getElementById('btn5').value)" />
+        <input type="button" value="6" class="numberButton" id="btn6"
+        onclick="asignarValor(document.getElementById('btn6').value)" />
+        <input type="button" value="-" class="numberButton" id="btnRestar"
+        onclick="marcarOperacion('resta')" />
+        <br/>
+        <input type="button" value="7" class="numberButton" id="btn7"
+        onclick="asignarValor(document.getElementById('btn7').value)" />
+        <input type="button" value="8" class="numberButton" id="btn8"
+        onclick="asignarValor(document.getElementById('btn8').value)" />
+        <input type="button" value="9" class="numberButton" id="btn9"
+        onclick="asignarValor(document.getElementById('btn9').value)" />
+        <input type="button" value="*" class="numberButton" id="btnMultiplicar"
+        onclick="marcarOperacion('multiplicacion')" />
+        <br/>
+        <input type="button" value="0" class="numberButton" id="btn0"
+        onclick="asignarValor(document.getElementById('btn0').value)" />
+        <input type="button" value="C" class="numberButton" id="btnBorrar"
+        onclick="limpiar()" />
+        <input type="button" value="=" class="numberButton" id="btnCalcular"
+        onclick="calcular()" />
+        <input type="button" value="/" class="numberButton" id="btnDividir"
+        onclick="marcarOperacion('division')" />
+
+        
+        
+
+
     </body>
 </html>
