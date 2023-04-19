@@ -1,0 +1,40 @@
+body {
+    background-color: yellow;
+}
+/* COMENTARIO */
+p { font-family: sans; 
+    color:blueviolet;
+
+} 
+
+p::first-line {
+    text-transform: uppercase ;
+}
+
+h1 { background-color: red;}
+
+#parrafo2 {
+    background-color: aqua;
+    text-align: justify;
+}
+
+.subtitulos {
+    color:brown;
+}
+
+.lista {
+ list-style-type: armenian   
+}
+
+a {
+    color:black;
+    font-style: italic;
+}
+
+a:hover {
+    color:red;
+}
+
+a:active {
+    color:green;
+}

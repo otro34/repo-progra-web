@@ -1,0 +1,35 @@
+body {
+    margin: 0px;
+    background-color: gainsboro;
+}
+
+header {
+    background-color: aquamarine;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    height: 50px;
+}
+
+section {
+    height: 150px;
+    background-color: bisque;
+}
+
+.servicio {
+    background-color: cadetblue;
+    margin-bottom:5px;
+}
+
+footer {
+    background-color: azure;
+}
+
+.menu li {
+    display: inline-block;
+    margin-top: 10px;;
+}
