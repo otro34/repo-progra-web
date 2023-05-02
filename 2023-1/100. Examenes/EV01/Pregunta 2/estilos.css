@@ -1,0 +1,66 @@
+#container {
+    max-width: 1000px;
+    margin:auto;
+}
+header {
+    display: flex;
+    background-color:lightgray;
+}
+
+header h1 {
+    font-size: 14px;
+    width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left:10px;
+    margin-top:15px;
+}
+
+nav ol {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+nav ol li{
+    list-style-type: none;
+    margin-right: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.iniciarSesionBlock {
+    width: 100%;
+    text-align: right;
+}
+
+main {
+    display:flex;
+    height: 90%;
+}
+
+.izqMain {
+    flex: 1;
+    border: solid 1px black;
+    background-image: url('01.jpg');
+}
+
+.derMain {
+    flex: 1;
+    border: solid 1px black;
+}
+
+.derTop {
+    display: flex;
+}
+
+.derBottom {
+    background-image: url('03.jpg');
+    background-size: auto;
+    height: 400px;
+}
+
+.gamepassImg {
+    width: 50%;
+}
+

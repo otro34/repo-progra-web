@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script>
+            const calcularTempratura = () => {
+                const radios = document.getElementsByName("rdnTemp");
+                const selected = Array.from(radios).find(radio => radio.checked).value;
+                const originalTemperature = document.getElementById("txtTemp").value;
+                let calculated = 0; 
+                let temp = "";
+
+                console.log(selected)
+
+                if (selected === "C")
+                {
+                    calculated = (originalTemperature * 9/5) + 32;
+                    temp = "F";
+                } else {
+                    calculated = (originalTemperature - 32) * 5/9;
+                    temp = "C";
+                }
+
+                alert(`La temperatura calculada es ${calculated}°${temp}.`)
+            }
+
+        </script>
+    </head>
+    <body>
+        <h2>Ingrese temperatura en:</h2>
+        <input type="radio" value="C" name="rdnTemp" checked/>Celsius
+        <input type="radio" value="F" name="rdnTemp" />Fahrenheit
+        <br><br>
+        <input type="text" placeholder="Ingrese temperatura..." id="txtTemp"/>
+        <button onclick="calcularTempratura()">CALCULAR</button>
+    </body>
+</html>
