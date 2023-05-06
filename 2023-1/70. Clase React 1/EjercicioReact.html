@@ -1,0 +1,64 @@
+<html>
+  <body>
+    <div id="app"></div>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/jsx">
+      const app = document.getElementById('app');
+      
+      function Header() {
+        return (<h1>ESTO ES DINAMICO</h1>)
+      }
+
+      function Main(props){
+        const { title, text } = props;
+        return (
+          <div>
+            <h2>{ title }</h2>
+            <p>
+              { text }
+            </p>              
+        </div>
+        )
+      }
+
+      function Menu({ options }) {
+        return(
+          <ol>
+            {
+              options.map((option) => (
+                <li key={option}>{ option }</li>
+              ) )
+            }
+          </ol>
+        )
+      }
+
+      const opciones = ["Acerca de", "Servicios", "Nosotros", "Mi Cuenta"];
+
+      function HomePage() {
+        const [contador, setContador] = React.useState(0);
+
+        function handleClick() {
+          setContador(contador + 1);
+          console.log('Has hecho click ' + contador + ' veces');
+        }
+
+        return(
+          <div>
+            <Header></Header>
+            <Menu options={opciones} />
+            <Main title="Esto es un titulo" text="Est es un texto" />
+            <Main title="Esto es un titulo 2" text="Est es un texto2"/>
+            <button onClick={() => handleClick()} >CLICK</button>
+          </div>
+        )
+      }
+      
+      ReactDOM.render(<HomePage />, app);
+    </script>
+  </body>
+</html>
