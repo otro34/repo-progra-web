@@ -9,21 +9,37 @@ const findAll = () => {
 
 const create = (docente) => {
     docentes.push(docente);
+
+    return docente;
 }
 
 const findOne = (id) => {
-    return docentes.find(x => x.id === id);
+    const result = docentes.find(x => x.id == id);
+    return result;
 }
 
 const update = (docente) => {
+    const index = docentes.findIndex(item => item.id === docente.id);
+    
+    if (index > -1)
+        docentes[index] = docente;
 
+    return docente;
 }
 
 const remove = (id) => {
-
+    console.log(id)
+    const index = docentes.findIndex(item => item.id == id)
+    
+    if (index > -1) {
+        docentes.splice(index, 1)
+        return true;
+    } else
+    return false;
+        
 }
 
 
 const DocentesRepository = { findAll, create, findOne,update, remove };
 
-export default DocentesRepository;
+export default DocentesRepository; 
