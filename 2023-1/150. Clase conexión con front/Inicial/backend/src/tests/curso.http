@@ -1,0 +1,45 @@
+GET http://localhost:3001/cursos
+########
+
+POST http://localhost:3001/cursos/
+Content-Type: application/json
+
+{
+    "id": 4,
+    "nombre": "HCI",
+    "nivel": 5,
+    "carrera": "Sistemas",
+    "idDocente": 2
+  }
+###
+
+PUT http://localhost:3001/cursos/
+Content-Type: application/json
+
+  {
+    "id": 4,
+    "nombre": "Human-Computer Interaction",
+    "nivel": 5,
+    "carrera": "Sistemas",
+    "idDocente": 2
+  }
+
+###
+
+GET http://localhost:3001/cursos/2
+###
+
+DELETE http://localhost:3001/cursos/3
+
+########
+
+POST http://localhost:3001/cursos/
+Content-Type: application/json
+
+{
+    "id": 7,
+    "nombre": "Gestion de Proyectos",
+    "nivel": 5,
+    "carrera": "Sistemas",
+    "idDocente": 2
+  }
