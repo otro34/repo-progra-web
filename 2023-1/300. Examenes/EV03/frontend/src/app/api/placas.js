@@ -4,6 +4,10 @@ const endpoint = "/placas"
 
 const findAll = async () => Base.get(endpoint)
 
-const placasApi = { findAll }
+const update = async (request) => Base.put(endpoint, request);
+
+const create = async (request) => Base.put(endpoint, request);
+
+const placasApi = { findAll, update, create }
 
 export default placasApi

@@ -10,15 +10,31 @@ import { useEffect, useState } from 'react';
 export default function Home() {
 
   const [ placas, setPlacas ] = useState([])
+  const [ terminoBusqueda, setTerminoBusqueda ] = useState("")
 
   const handleOnLoad = async () => {
     const result = await placasApi.findAll();
     setPlacas(result.data)
   }
 
+  const handleBuscar = async () => {
+    const result = await placasApi.findAll();
+    const filtered = result.data.filter(x => x.nombre.includes(terminoBusqueda))
+    setPlacas(filtered)
+
+  }
+
+  const handleDesactivar = async (item) => {
+    item.activo = false
+    const result = await placasApi.update(item);
+    if (result)
+      handleOnLoad();
+  }
+
   useEffect(() => {
-    handleOnLoad();
-  }, [])
+    if (!terminoBusqueda)
+      handleOnLoad();
+  }, [terminoBusqueda])
 
   return (
     <main >
@@ -31,10 +47,14 @@ export default function Home() {
         </Row>
         <Row>
           <Col xs={10}>
-            <Form.Control type="email" placeholder="Ingrese nombre o placa..." />
+            <Form.Control 
+              type="text" 
+              placeholder="Ingrese nombre o placa..."
+              value={terminoBusqueda}
+              onChange={e => setTerminoBusqueda(e.target.value)} />
           </Col>
           <Col xs={2}>
-            <Button>
+            <Button onClick={() => handleBuscar()}>
               <i className="bi bi-search"></i>
                &nbsp;BUSCAR
               </Button>
@@ -73,7 +93,8 @@ export default function Home() {
                           <td>{item.placa}</td>
                           <td>{item.activo ? "Si" : "No"}</td>
                           <td>
-                            <Button variant="danger" size="sm">
+                            <Button variant="danger" size="sm" 
+                              onClick={() => handleDesactivar(item)}>
                               <i className="bi bi-dash-circle-fill"></i>
                             </Button>
                           </td>

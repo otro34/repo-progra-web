@@ -5,7 +5,7 @@ let marcas = [{
     id: 2, nombre: "Ford"
   },
   {
-    id: 2, nombre: "Dodge"
+    id: 3, nombre: "Dodge"
   }]
 
   const findAll = () => {
