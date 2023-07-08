@@ -81,7 +81,7 @@ export default function Home() {
                         { placas?.map( item => (
                         <tr key={item.id}>
                           <th scope="row" >
-                            <a href="mantenimiento/1">
+                            <a href={"mantenimiento/"+item.id}>
                               {item.id}
                             </a>
                             </th>

@@ -23,7 +23,7 @@ const PaginaRegistro = () => {
         <>
         <h2>Nuevo Registro</h2>
         <br/>
-            <Formulario placa={placaDefault}/>
+            <Formulario id={0} placa={placaDefault} />
         </>
     )
 } 

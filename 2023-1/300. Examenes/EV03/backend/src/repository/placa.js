@@ -42,6 +42,7 @@ let placas = [{
   }
 
   const create = (placa) => {
+    console.debug(placa)
     counter++;
     const newObject = {...placa, id: counter };
     placas.push(newObject);
@@ -50,7 +51,9 @@ let placas = [{
   }
 
   const findOne = (id) => {
+    console.debug({ id })
     const result = placas.find(x => x.id == id);
+    console.debug(result)
 
     return result;
   }
