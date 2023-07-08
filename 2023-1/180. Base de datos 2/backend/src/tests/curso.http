@@ -1,0 +1,44 @@
+GET http://localhost:3001/cursos
+########
+
+POST http://localhost:3001/cursos/
+Content-Type: application/json
+
+{
+    "nombre": "Progra Web",
+    "nivel": 5,
+    "carrera": "Sistemas",
+    "idDocente": 1
+  }
+###
+
+PUT http://localhost:3001/cursos/
+Content-Type: application/json
+
+  {
+    "id": 2,
+    "nombre": "Programacion Web",
+    "nivel": 5,
+    "carrera": "Sistemas",
+    "idDocente": 2
+  }
+
+###
+
+GET http://localhost:3001/cursos/2
+###
+
+DELETE http://localhost:3001/cursos/3
+
+########
+
+POST http://localhost:3001/cursos/
+Content-Type: application/json
+
+{
+    "id": 7,
+    "nombre": "Gestion de Proyectos",
+    "nivel": 5,
+    "carrera": "Sistemas",
+    "idDocente": 2
+  }
