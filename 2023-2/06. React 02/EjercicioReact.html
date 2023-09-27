@@ -1,0 +1,67 @@
+<html>
+  <body>
+    <div id="app"></div>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/jsx">
+      const app = document.getElementById('app');
+
+      function Header(props) {
+        return (<h1> {props.title} </h1>);
+      }
+
+      function Main() {
+        return (<p>Este es mi párrafo. </p>)
+      }
+      
+      function Footer({text, cities}) {
+
+        return (
+        <>
+          <span>{text}</span>
+          <br />
+          <ul>
+            {cities.map(item => (
+              <li key={item}>{item}</li>
+              ))}
+          </ul>
+        </>
+        )
+      }
+
+      function HomePage() {
+        
+        let cities = ["Lima", "Tacna", "Arequipa", "Trujillo", "Iquitos"];
+
+        //let counter = 0;
+
+        const [counter, setCounter] = React.useState(0)
+
+        function handleOnClick() {
+          console.log('Hice Click!');
+          setCounter(counter + 1);
+          console.log(counter);
+        }
+
+        return (
+          <main>
+            <Header title="Este es mi título"/>
+            <Main />
+            <Footer text="Ciudades costeras en el Peru:" cities={cities}/>
+            <p>He hecho click {counter} veces.</p>
+            <br />
+            <button onClick={handleOnClick}>CLICK ME!</button>
+          </main>
+          
+        )
+      }
+
+      ReactDOM.render(<HomePage />, app);
+
+    </script>
+  </body>
+</html>
