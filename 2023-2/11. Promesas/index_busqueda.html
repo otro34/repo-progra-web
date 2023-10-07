@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pokemon</title>
+<script>
+    function buscar() {
+        const pkmn = document.getElementById("txtBusqueda").value
+        
+        fetch('https://pokeapi.co/api/v2/pokemon/'+pkmn)
+            .then(response => response.json())
+            .then(data => {
+                const id = data.id;
+                const name = data.name;
+                const img = data.sprites.front_default;
+
+                document.getElementById("nombre").innerHTML = name;
+                document.getElementById("numero").innerHTML = id;
+                document.getElementById("imagen").src = img;
+            })         
+
+    }
+
+</script>
+</head>
+<body>
+    <h1>Búsqueda de PKMN</h1>
+    <input type="text" id="txtBusqueda">
+    <br/>
+    <button onclick="buscar()">LLAMAR API</button>
+    
+    <h2 id="nombre">Nombre Pokemon</h2>
+    <h3 id="numero">0000</h3>
+    <br />
+    <img src="" alt="Imagen de Pokemon" id="imagen"/>
+
+</body>
+</html>
