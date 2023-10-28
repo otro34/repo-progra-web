@@ -1,5 +1,6 @@
 import express from 'express';
 import bodyParser from 'body-parser'
+import cors from 'cors'
 
 import docenteRoutes from './routes/docente.js';
 import alumnoRoutes from './routes/alumno.js'
@@ -10,6 +11,7 @@ import matriculaRoutes from './routes/matricula.js'
 
 var app = express();
 app.use(bodyParser.json())
+app.use(cors())
 
 app.get('/', (req, res) => {
     return res.json({ result: 'OK'})
