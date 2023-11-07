@@ -53,7 +53,7 @@ const CarritoDeCompra = ({ open, onClose }) => {
       
       if (result) {
         alert("Order saved!");
-        carritoApi.removeAll();
+        await carritoApi.removeAll();
         handleClose();
       }
         
