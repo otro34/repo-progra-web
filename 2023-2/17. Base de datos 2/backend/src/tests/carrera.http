@@ -1,0 +1,23 @@
+GET http://localhost:3001/carrera
+#######
+
+POST http://localhost:3001/carrera
+Content-Type: application/json
+
+{
+    "nombre": "Derecho"
+}
+
+#######
+
+GET http://localhost:3001/carrera/2
+
+#######
+
+PUT http://localhost:3001/carrera
+Content-Type: application/json
+
+{
+    "id": "3",
+    "nombre": "Arquitectura"
+}
