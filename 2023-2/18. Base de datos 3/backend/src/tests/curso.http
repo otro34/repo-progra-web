@@ -1,0 +1,8 @@
+POST http://localhost:3001/curso
+Content-Type: application/json
+
+{
+    "nombre": "Programación Orientada a Objetos",
+    "creditos": 5,
+    "idCarrera": 1
+}
