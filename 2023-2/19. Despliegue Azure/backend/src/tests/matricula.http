@@ -1,0 +1,15 @@
+POST https://jcromaina-20232-prograweb-as-api.azurewebsites.net/matricula
+Content-Type: application/json
+
+{
+    "fechaMatricula": "2023-01-01",
+    "idAlumno": 1,
+    "cursos": [
+        {
+            "id": 1
+        },
+        {
+            "id": 2
+        }
+    ]
+}

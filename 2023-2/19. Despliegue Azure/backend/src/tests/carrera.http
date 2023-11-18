@@ -1,0 +1,23 @@
+GET https://jcromaina-20232-prograweb-as-api.azurewebsites.net/carrera
+#######
+
+POST https://jcromaina-20232-prograweb-as-api.azurewebsites.net/carrera
+Content-Type: application/json
+
+{
+    "nombre": "Arquitectura"
+}
+
+#######
+
+GET http://localhost:3001/carrera/2
+
+#######
+
+PUT http://localhost:3001/carrera
+Content-Type: application/json
+
+{
+    "id": "3",
+    "nombre": "Arquitectura"
+}

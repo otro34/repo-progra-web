@@ -1,0 +1,23 @@
+GET https://jcromaina-20232-prograweb-as-api.azurewebsites.net/curso
+
+######
+
+POST https://jcromaina-20232-prograweb-as-api.azurewebsites.net/curso
+Content-Type: application/json
+
+{
+    "nombre": "Programación Orientada a Objetos",
+    "creditos": 5,
+    "idCarrera": 1
+}
+
+#####
+
+POST https://jcromaina-20232-prograweb-as-api.azurewebsites.net/curso
+Content-Type: application/json
+
+{
+    "nombre": "Programacion Web",
+    "creditos": 5,
+    "idCarrera": 1
+}
