@@ -1,7 +1,7 @@
 GET https://jcromaina-20232-prograweb-as-api.azurewebsites.net/alumno
 #######
 
-GET http://localhost:3001/alumno/1
+GET http://localhost:3001/alumno/1?id=123
 
 #######
 POST https://jcromaina-20232-prograweb-as-api.azurewebsites.net/alumno
