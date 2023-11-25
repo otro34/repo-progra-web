@@ -39,19 +39,10 @@ const update = async (objMatricula) => await matriculaRepository.update(objMatri
 
 const findAll = async() => {
     try {
-        return await matricula.findAll(
-            {include: [{
-                    model: curso
-                },
-                {
-                    model: cursoMatricula
-                },
-                {
-                    model: alumno
-                }] });
+        return await matricula.findAll();
 
     } catch(err) {
-        console.error(matricula)
+        console.error(err)
         return null
     }
 }

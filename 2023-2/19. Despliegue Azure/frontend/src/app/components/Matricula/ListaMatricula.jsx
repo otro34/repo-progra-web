@@ -23,7 +23,7 @@ const ListaMatricula = ({ matriculas }) => {
             </thead>
             <tbody>
                 {
-                    matriculas.map(m => {
+                    matriculas?.map(m => {
                         return (
                             <tr>
                                 <td>{m.id}</td>
