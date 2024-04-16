@@ -1,0 +1,21 @@
+header {
+    background-color: blueviolet;
+    height: 100px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+article {
+    background-color: aquamarine;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+section {
+    display: flex;
+}

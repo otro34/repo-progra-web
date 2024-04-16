@@ -1,0 +1,22 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.div1 {
+    background-color: #f1f1f1;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border: solid black 1px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+
+.div2 {
+    background-color: #f88c8c;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border: solid black 1px;
+}

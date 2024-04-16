@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer form</title>
+</head>
+<body>
+    <form action="https://otroservidor.com">
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" placeholder="Nombre" />
+        <br/>
+        <label for="apellido">Apellido: </label>
+        <input type="text" name="apellido" placeholder="Apellido" />
+        <br/><br/>
+        <input type="checkbox" id="vehiculo1" name="vehiculo1" value="bicicleta">        
+        <label for="vehiculo1">Bicicleta</label>
+        <input type="checkbox" id="vehiculo2" name="vehiculo2" value="auto">        
+        <label for="vehiculo1">Automóvil</label>
+        <br/><br/>
+        <label for="radio1">Genero: </label>
+        <input type="radio" id="radio1" name="genero" value="masculino" /> Masculino
+        <input type="radio" id="radio2" name="genero" value="femenino" /> Femenino
+        <input type="radio" id="radio3" name="genero" value="otro" /> Otro
+        <br/><br/>
+        <select name="pais">
+            <option value="argentina">Argentina</option>
+            <option value="brasil">Brasil</option>
+            <option value="chile">Chile</option>
+            <option value="uruguay">Uruguay</option>
+        </select>
+        <br/><br/>
+        <input type="submit" value="Enviar" />
+    </form>
+</body>
+</html>
