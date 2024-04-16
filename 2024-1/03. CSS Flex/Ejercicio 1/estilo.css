@@ -1,0 +1,36 @@
+header {
+    background-color: aquamarine;
+    height: 80px;
+}
+
+h1 {
+    padding-top:20px;
+}
+
+h2 {
+    margin-top: 0px;
+}
+
+nav {
+    background-color: antiquewhite;
+    height:50px;
+    padding-top:20px;
+}
+
+
+article {
+    background-color: white;
+    padding: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+    
+}
