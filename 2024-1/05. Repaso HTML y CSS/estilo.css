@@ -1,0 +1,105 @@
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    padding-left:40px;
+    height: 100px;
+    display:flex;
+}
+
+.menuCabecera {
+    padding-left: 0;
+    display:flex;
+    padding-top: 30px;
+}
+
+.menuCabecera li {
+    font-size: 14px;
+    margin-right: 1rem;
+    list-style-type: none;
+    text-transform: uppercase;
+    color: gray;
+    font-weight: bold;
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menuCabecera li:nth-of-type(5) {
+    color: orangered;
+}
+
+header input {
+    margin-top: 40px;
+    max-height: 20px;
+    width: 80px;
+}
+
+nav {
+    background-color: #dddddd;
+}
+
+.menuNav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
+
+.menuNav li {
+    list-style-type: none;
+    margin-right:30px;
+    text-transform: uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+    white-space: nowrap;
+    font-size:14px;
+}
+
+section {
+    background-image:url(img/banner.jpg);
+    height: 500px;
+}
+
+h2 {
+    color:white;
+    font-size: 60px;
+    width: 400px;
+    margin-left: 50px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h6 {
+    font-size: 12px;
+    margin: 0px;
+    padding-top: 70px;
+    margin-left: 50px;
+    color: #dddddf;
+}
+
+button {
+    margin-left: 50px;
+    background-color: black;
+    border-color: white;
+    border-width: 2px;
+    padding: 5px;
+    color: white;
+    box-shadow: none;
+    outline: none;
+}
+
+button:hover {
+    border: none;
+}
+
+button:active {
+    border: none;
+}
+
+button:focus {
+    border: none;
+}

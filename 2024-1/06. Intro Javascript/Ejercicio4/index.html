@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function cambiarImagen() {
+            //let o const o var
+            const imagen = document.getElementById("imagen").src;
+            alert(imagen);
+            if (imagen === "file:///E:/repositorios/repo-progra-web/2024-1/06.%20Intro%20Javascript/Ejercicio4/01.jpg") {
+                document.getElementById("imagen").src = "02.jpeg";
+            } else {
+                document.getElementById("imagen").src = "01.jpg";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Mi titulo</h1>
+    <img src="01.jpg" alt="sup" style="width: 600px; height: 400px;" id="imagen"/>
+    <br /><br/>
+    <button onclick='cambiarImagen();'>
+        CLICK!
+    </button>
+    <button onclick='document.getElementById("imagen").style.display = "none";'>
+        ESCONDER
+    </button>
+    <button onclick='document.getElementById("imagen").style.display = "block";'>
+        MOSTRAR
+    </button>
+</body>
+</html>
