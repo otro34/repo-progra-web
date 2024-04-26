@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <span id="lblResultado"></span>
+    <br>
+    <input type="text" id="txtOperacion" value="" >
+    <br>
+    <br>
+    <input type="button" value="1" onclick='setValor(1)'>
+    <input type="button" value="2" onclick='setValor(2)'>
+    <input type="button" value="3" onclick='setValor(3)'>
+    <input type="button" value="+" onclick="marcarOperacion('suma')">
+    <br>
+    <input type="button" value="4" onclick='setValor(4)'>
+    <input type="button" value="5" onclick='setValor(5)'>
+    <input type="button" value="6" onclick='setValor(6)'>
+    <input type="button" value="-" onclick="marcarOperacion('resta')">
+    <br>
+    <input type="button" value="7" onclick='setValor(7)'>
+    <input type="button" value="8" onclick='setValor(8)'>
+    <input type="button" value="9" onclick='setValor(9)'>
+    <input type="button" value="*" onclick="marcarOperacion('multiplicacion')">
+    <br>
+    <input type="button" value="0" onclick='setValor(0)'>
+    <input type="button" value="C" onclick='limpiarTodo()'>
+    <input type="button" value="=" onclick='igual()'>
+    <input type="button" value="/" onclick="marcarOperacion('division')">
+    <br>
+    
+</body>
+</html>
