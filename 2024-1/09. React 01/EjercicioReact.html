@@ -1,0 +1,35 @@
+<html>
+  <body>
+    <div id="app"></div>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/jsx">
+      const app = document.getElementById('app');
+
+      const Header = (props) => {
+        return (
+          <header>
+            <h1> { props.title } </h1>
+            <h2>Este es el subtítulo.</h2>
+          </header>
+          );
+      }
+
+      const HomePage = () => {
+        return (
+          <main>
+            <Header title="Esta es mi página construída con REACT"/>
+            <Header title="Este es otro título."/>
+            <section></section>
+          </main>
+        )
+      }
+
+      ReactDOM.render(<HomePage/>,app);
+    </script>
+  </body>
+</html>
