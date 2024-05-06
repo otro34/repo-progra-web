@@ -1,0 +1,86 @@
+<html>
+  <body>
+    <div id="app"></div>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/jsx">
+      const app = document.getElementById('app');
+
+      const Header = (props) => {
+        return (
+          <header>
+            <h1> { props.title } </h1>
+            <h2>Este es el subtítulo.</h2>
+          </header>
+          );
+      }
+
+      function Main() {
+
+        const equipos = ["Bayern Munich", "Manchester City", "Napoli", 
+        "Atletic de Bilbao", "Borussia Dortmund", "Juventus", 
+        "Liverpool", "Atletico de Madrid"];
+
+        //HOOKS
+
+        const [counter, setCounter ] = React.useState(0);          
+
+        function handleOnClick() {
+          setCounter(counter + 1);
+          console.log(`He hecho click ${ counter } veces en el boton.`);
+        }
+
+        return (
+          <section>
+            <p>Equipos de Futbol Europeos</p>
+            <ol>
+              { equipos.map( equipo => <li key={equipo} > { equipo } </li>) }
+            </ol>
+            <br />
+            <p>He hecho click { counter } veces en el boton.</p>
+
+            <button onClick={handleOnClick}>CLICK ME!</button>
+
+          </section>
+        )
+      }
+
+      function Footer() {
+        return (
+          <footer>
+            <ol>
+              <li>Acerca de.</li>
+              <li>Mapa del Sitio.</li>
+              <li>Ubícanos.</li>
+            </ol>
+          </footer>
+        )
+      }
+
+      function Placeholder() {
+        return (
+          <section>
+            <p>Este es un componente de relleno.</p>
+          </section>
+        )
+      }
+
+      const HomePage = ({ main }) => {
+
+        return (
+          <main>
+            <Header title="Esta es mi página construída con REACT"/>
+            { main ?? <Placeholder />}
+            <Footer />
+          </main>
+        )
+      }
+
+      ReactDOM.render(<HomePage main= { <Main /> } />,app);
+    </script>
+  </body>
+</html>
