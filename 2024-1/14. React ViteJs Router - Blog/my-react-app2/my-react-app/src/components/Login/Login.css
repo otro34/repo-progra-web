@@ -1,0 +1,10 @@
+.mainLogin {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.errorMessage {                           
+    color: red;
+    margin: 10px;
+}
