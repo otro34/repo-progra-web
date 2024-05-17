@@ -1,0 +1,28 @@
+header {
+    background-color: antiquewhite;
+    display:flex;
+    padding-left: 50px;
+}
+
+header a {
+    margin-left: 70%;
+    padding-top: 30px;
+}
+
+header #derecha {
+    width: 100%;
+    text-align: right;
+    padding-top: 35px;
+    padding-right: 50px;
+} 
+
+header h3 {
+    display: inline;
+}
+
+header button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
