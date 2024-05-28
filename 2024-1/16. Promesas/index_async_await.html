@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"></script>
+    <script>
+        async function buscar() {
+            const pokemon = document.getElementById('nombrePokemon').value;
+
+            console.log('voy a llamar al endpoint')
+            
+            const resp = await axios.get('https://pokeapi.co/api/v2/pokemon/'+pokemon)
+            
+            console.log(resp)
+
+            const id = resp.data.id;
+            const name = resp.data.name;
+            const img = resp.data.sprites.front_default;
+
+            document.getElementById('numero').innerHTML = id;
+            document.getElementById('nombre').innerHTML = name;
+            document.getElementById('imagen').src = img;
+
+            console.log('ya he llamado al endpoint')
+
+            
+            
+        
+                
+
+        }
+
+    </script>
+</head>
+<body>
+    <h1>
+        BUSQUEDA DE POKEMON
+    </h1>
+    <input type="text" id="nombrePokemon"/>
+    <br/>
+    <button onclick="buscar()">BUSCAR</button>
+    <hr />
+    <h2 id="nombre"></h2>
+    <h3 id="numero"></h3>
+    <img src="" alt="Imagen de pokemon" id="imagen" />
+
+
+</body>
+</html>
