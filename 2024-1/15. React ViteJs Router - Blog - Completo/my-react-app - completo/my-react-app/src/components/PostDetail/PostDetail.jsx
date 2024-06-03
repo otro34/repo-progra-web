@@ -1,13 +1,17 @@
-const PostDetail = ({ titulo, autor, fecha, contenido, contenidoLargo }) => {
+
+const PostDetail = ({ postId }) => {
+
+    console.log(postId)
+
     return (
         <>
-            <h2>{ titulo }</h2>
-            <h3>{ autor }</h3>
-            <h4>{ fecha }</h4>
+            <h2>Titulo</h2>
+            <h3>Id: { postId }</h3>
+            <h4>Fecha: </h4>
             <p>
-                {contenido}
+                Contenido
             </p>
-            <p>{ contenidoLargo}</p>
+            <p>Contenido Largo</p>
         </>
     )
 }
