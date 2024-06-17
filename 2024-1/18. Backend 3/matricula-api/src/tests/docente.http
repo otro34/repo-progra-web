@@ -1,0 +1,30 @@
+GET http://localhost:3001/docente
+
+###
+POST http://localhost:3001/docente
+Content-Type: application/json
+
+{
+    "id": 3,
+    "name": "Docente 3",
+    "email": "docente3@docente.com",
+    "code": "203"
+}
+
+####
+
+GET http://localhost:3001/docente/3
+
+####
+DELETE http://localhost:3001/docente/5
+
+###
+PUT http://localhost:3001/docente
+Content-Type: application/json
+
+{
+    "id": 3,
+    "name": "Docente 3",
+    "email": "docente3@ulima.edu.pe",
+    "code": "203"
+}
