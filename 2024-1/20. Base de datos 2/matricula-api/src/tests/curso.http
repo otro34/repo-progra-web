@@ -1,0 +1,30 @@
+GET http://localhost:3001/curso
+
+###
+POST http://localhost:3001/curso
+Content-Type: application/json
+
+{
+
+    "name": "Programacion Web",
+    "nivel": 8,
+    "carrera": "Ing. Sistemas"
+}
+
+####
+
+GET http://localhost:3001/curso/1
+
+####
+DELETE http://localhost:3001/curso/3
+
+###
+PUT http://localhost:3001/curso
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "Programacion Web",
+    "nivel": 6,
+    "carrera": "Ing. Sistemas"
+  }

@@ -1,0 +1,30 @@
+GET http://localhost:3001/matricula
+
+###
+POST http://localhost:3001/curso
+Content-Type: application/json
+
+{
+    "id": 4,
+    "name": "Estadística Aplicada",
+    "nivel": 2,
+    "carrera": "Ing. Sistemas"
+}
+
+####
+
+GET http://localhost:3001/curso/3
+
+####
+DELETE http://localhost:3001/curso/3
+
+###
+PUT http://localhost:3001/curso
+Content-Type: application/json
+
+{
+    "id": 4,
+    "name": "Estadística Aplicada",
+    "nivel": 3,
+    "carrera": "Ing. Sistemas"
+}
