@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Focos</title>
+        <script>
+            function encender() {
+                document.getElementById("foco").src="img/on.JPG";
+            }
+
+            function apagar() {
+                document.getElementById("foco").src="img/off.JPG";
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick='encender()'>ENCENDER!</button>
+        <img src="img/off.JPG" id="foco" />
+        <button onclick='apagar()'>APAGAR!</button>
+    </body>
+</html>

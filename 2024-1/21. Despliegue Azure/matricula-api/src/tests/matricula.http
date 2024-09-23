@@ -1,0 +1,17 @@
+GET http://localhost:3001/matricula
+
+###
+GET http://localhost:3001/matricula/findallcomplete
+
+####
+POST http://localhost:3001/matricula
+Content-Type: application/json
+
+{
+    "fechaMatricula": "2021-09-01",	
+    "idAlumno": 1,
+    "cursos": [
+        { "idCurso": 1 },
+        { "idCurso": 2 }
+    ]
+}

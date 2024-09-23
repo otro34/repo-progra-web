@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
+
+h1 {
+    color: red;
+}
+
+h2 {
+    color: blue;
+}
+
+h3 {
+    color: green;
+}
+
+#titulo {
+    font-family: 'Times New Roman', serif;
+}
+
+.parrafo {
+    font-family: "Sevillana", cursive;
+    font-size: 1.5em;
+}
+
+.imagen {
+    height: 800px;
+    background-image: url('img/superman.JPG');
+}
+
+p::first-line {
+    color: red;
+    font-size: 1.5em;
+}

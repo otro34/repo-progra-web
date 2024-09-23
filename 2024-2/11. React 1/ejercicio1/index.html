@@ -1,0 +1,42 @@
+<html>
+  <body>
+    <div id="app">
+    </div>
+        <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/jsx">
+      const app = document.getElementById('app');
+
+      const Header = () => {
+        return (
+            <header>
+                <h1>La pagina del profesor </h1>    
+            </header>
+        )
+      }
+
+      const MainPage = () => {
+        return (
+            <main>
+                <Header />
+                <p>Este es el contenido principal de la página.</p>
+                <Article titulo="Articulo 1" parrafo="Este es el contenido del artículo 1. "/>
+                <Article titulo="Articulo 2" parrafo="Este es el contenido del artículo 2. "/>
+            </main>
+        )
+      }
+
+      const Article = ({ titulo, parrafo}) => {
+        return (
+            <article>
+                <h2> { titulo } </h2>
+                <p>{ parrafo }</p>
+            </article>
+        )
+      }
+
+      ReactDOM.render(<MainPage />, app)
+    </script>
+  </body>
+</html>

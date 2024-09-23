@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Formulario 2</title>
+    </head>
+    <body>
+        <h1>Formulario de Registro de Estudiante</h1>
+        <form action="gracias.html">
+            <label for="nombre">Nombres:</label>
+            <br/>
+            <input type="text" id="nombre" name="nombre" required>
+            <br/>
+            <label for="apellidos">Apellidos:</label>
+            <br/>
+            <input type="text" id="apellidos" name="apellidos">
+            <br/>
+            <label for="apellidos">Fecha de Nacimiento:</label>
+            <br/>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+            <br/>
+            <label for="sexo">Sexo:</label>
+            <br/>
+            <input type="radio" id="sexo" name="sexo" value="m">Masculino
+            <br/>
+            <input type="radio" id="sexo" name="sexo" value="f">Femenino
+            <br/>
+            <label for="carrera">Carrera:</label>
+            <br/>
+            <select id="carrera" name="carrera">
+                <option value="AR">Arquitectura</option>
+                <option value="DE">Derecho</option>
+                <option value="II">Ingeniería Industrial</option>
+                <option value="IS">Ingeniería en Sistemas</option>
+                <option value="ME">Medicina</option>
+            </select>
+            <br/>
+            <label for="intereses">Seleccione sus intereses:</label>
+            <fieldset id="intereses">
+                <input type="checkbox" id="interes1" name="interes1" value="deportes">Deportes
+                <br/>
+                <input type="checkbox" id="interes2" name="interes2" value="musica">Música
+                <br/>
+                <input type="checkbox" id="interes3" name="interes3" value="tecnologia">Tecnología
+                <br/>
+                <input type="checkbox" id="interes4" name="interes4" value="arte">Arte
+                <br/>
+                <input type="checkbox" id="interes5" name="interes5" value="ciencia">Ciencia
+            </fieldset>
+            <br/><br/>
+            <input type="submit" value="Iniciar Sesión">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<html></html>
+    <head>
+        
+    </head>
+    <body>
+        <h1>Mis Personas</h1>
+        <section>
+            <ol id="listaPersonas">
+
+            </ol>
+            <br />
+            <button id="btnAgregar" onclick="llenarPersonas();">
+                Agregar Personas</button>
+            <br />
+            <button id="btnLimpiar" onclick="limpiarLista();">
+                Limpiar Lista</button>
+            <br />
+            <button id="btnAgregarEdad" onclick="sumarEdad();">
+                Sumar Edad</button>
+            <br /><br />
+            <input type="text" id="txtBusqueda" />
+            <br />
+            <button id="btnBuscar" onclick="buscarPersonaPorNombre();">
+                Buscar Persona por Nombre</button>
+            <br />
+            <br/>
+            <select id="selectPaises">
+                <option value="0">Seleccione un país</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Peru">Peru</option>
+                <option value="Uruguay">Uruguay</option>
+            </select>
+            <br/>
+            <button id="btnFiltrar" onclick="filtrarPorPais();">
+                Filtrar por País</button>
+        </section>
+    <script src="script.js"></script>
+    </body>
+</html>
